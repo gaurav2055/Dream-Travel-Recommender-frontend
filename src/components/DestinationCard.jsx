@@ -21,9 +21,11 @@ const DestinationCard = ({ destination }) => {
 						<Typography variant='subtitle2' gutterBottom>
 							Tags:
 						</Typography>
-						<Stack direction='row' spacing={1} flexWrap='wrap'>
+						<Stack direction='row' spacing={0} flexWrap='wrap'>
 							{tags.map((tag, index) => (
-								<Chip key={index} label={tag} size='small' color='primary' />
+								<Box sx={{ paddingBottom: "0.5rem", paddingLeft: "0.5rem" }}>
+									<Chip key={index} label={tag} size='small' color='primary' />
+								</Box>
 							))}
 						</Stack>
 					</Box>
